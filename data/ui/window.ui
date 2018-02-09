@@ -3,6 +3,7 @@
   <template class="CTWindow" parent="GtkApplicationWindow">
     <property name="default-width">1280</property>
     <property name="default-height">720</property>
+    <!-- Header bars -->
     <child type="titlebar">
       <object class="GtkHeaderBar" id="header_bar">
         <property name="visible">true</property>
@@ -10,21 +11,17 @@
         <property name="title">CTube</property>
       </object>
     </child>
+    <!-- Other content ->
     <child>
-      <object class="GtkBox" id="content_box">
+      <object class="GtkOverlay" id="overlay">
 	<property name="visible">true</property>
 	<property name="orientation">vertical</property>
 	<child>
-          <object class="GtkLabel" id="label">
-            <property name="label">Hello, World!</property>
+          <object class="GtkDrawingArea" id="drawing_area">
             <property name="visible">true</property>
-            <attributes>
-              <attribute name="weight" value="bold"/>
-              <attribute name="scale" value="2"/>
-             </attributes>
           </object>
 	</child>
       </object>
-    </child>
+    </child-->
   </template>
 </interface>

@@ -8,7 +8,9 @@ src = [
 ]
 
 dps = [
-    dependency('gtk+-3.0')
+    dependency('gtk+-3.0'),
+    dependency('gstreamer-1.0'),
+    dependency('gstreamer-video-1.0')
 ]
 
 executable(
